@@ -1,0 +1,17 @@
+D:\2030\TaskManagementSystem\TaskManagement.Infrastructure\bin\Debug\net9.0\TaskManagement.Infrastructure.deps.json
+D:\2030\TaskManagementSystem\TaskManagement.Infrastructure\bin\Debug\net9.0\TaskManagement.Infrastructure.runtimeconfig.json
+D:\2030\TaskManagementSystem\TaskManagement.Infrastructure\bin\Debug\net9.0\TaskManagement.Infrastructure.dll
+D:\2030\TaskManagementSystem\TaskManagement.Infrastructure\bin\Debug\net9.0\TaskManagement.Infrastructure.pdb
+D:\2030\TaskManagementSystem\TaskManagement.Infrastructure\bin\Debug\net9.0\TaskManagement.Domain.dll
+D:\2030\TaskManagementSystem\TaskManagement.Infrastructure\bin\Debug\net9.0\TaskManagement.Domain.pdb
+D:\2030\TaskManagementSystem\TaskManagement.Infrastructure\obj\Debug\net9.0\TaskManagement.Infrastructure.csproj.AssemblyReference.cache
+D:\2030\TaskManagementSystem\TaskManagement.Infrastructure\obj\Debug\net9.0\TaskManagement.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\2030\TaskManagementSystem\TaskManagement.Infrastructure\obj\Debug\net9.0\TaskManagement.Infrastructure.AssemblyInfoInputs.cache
+D:\2030\TaskManagementSystem\TaskManagement.Infrastructure\obj\Debug\net9.0\TaskManagement.Infrastructure.AssemblyInfo.cs
+D:\2030\TaskManagementSystem\TaskManagement.Infrastructure\obj\Debug\net9.0\TaskManagement.Infrastructure.csproj.CoreCompileInputs.cache
+D:\2030\TaskManagementSystem\TaskManagement.Infrastructure\obj\Debug\net9.0\TaskMana.BCA0E1A6.Up2Date
+D:\2030\TaskManagementSystem\TaskManagement.Infrastructure\obj\Debug\net9.0\TaskManagement.Infrastructure.dll
+D:\2030\TaskManagementSystem\TaskManagement.Infrastructure\obj\Debug\net9.0\refint\TaskManagement.Infrastructure.dll
+D:\2030\TaskManagementSystem\TaskManagement.Infrastructure\obj\Debug\net9.0\TaskManagement.Infrastructure.pdb
+D:\2030\TaskManagementSystem\TaskManagement.Infrastructure\obj\Debug\net9.0\TaskManagement.Infrastructure.genruntimeconfig.cache
+D:\2030\TaskManagementSystem\TaskManagement.Infrastructure\obj\Debug\net9.0\ref\TaskManagement.Infrastructure.dll
