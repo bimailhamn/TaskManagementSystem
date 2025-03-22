@@ -26,7 +26,7 @@ namespace TaskManagement.Application.Services
 
             _userRepository.Add(user);
 
-            // Map the saved User entity to UserDto and return it
+            
             var createdUserDto = new UserDto
             {
                 Id = user.Id,
@@ -72,14 +72,14 @@ namespace TaskManagement.Application.Services
                 throw new KeyNotFoundException("User not found.");
             }
 
-            // Update user properties
+            
             user.Name = updatedUserDto.Name;
             user.Email = updatedUserDto.Email;
 
-            // Update the user in the repository
+           
             _userRepository.Update(user);
 
-            // Map the updated User entity to UserDto and return it
+            
             var updatedUserDtoResult = new UserDto
             {
                 Id = user.Id,
@@ -98,7 +98,7 @@ namespace TaskManagement.Application.Services
                 throw new KeyNotFoundException("User not found.");
             }
 
-            // Create the UserDto to return after deletion
+            
             var deletedUserDto = new UserDto
             {
                 Id = user.Id,
@@ -106,10 +106,10 @@ namespace TaskManagement.Application.Services
                 Email = user.Email
             };
 
-            // Delete the user from the repository
+            
             _userRepository.Delete(user.Id);
 
-            // Return the UserDto for the deleted user
+            
             return deletedUserDto;
         }
 

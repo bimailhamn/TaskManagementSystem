@@ -30,10 +30,10 @@ namespace TaskManagement.Infrastructure.Repositories
             if (task == null)
                 throw new ArgumentNullException(nameof(task));
 
-            // Menambahkan entitas secara sinkron
+            
             _context.Tasks.Add(task);
 
-            // Menyimpan perubahan secara sinkron
+            
             _context.SaveChanges();
 
             return task;
@@ -70,27 +70,27 @@ namespace TaskManagement.Infrastructure.Repositories
             if (task == null)
                 throw new ArgumentNullException(nameof(task));
 
-            // Menggunakan Find() yang bersifat sinkron
+            
             var existingTask = _context.Tasks.Find(task.Id);
             if (existingTask == null)
                 throw new KeyNotFoundException($"Task with ID {task.Id} not found.");
 
-            // Memperbarui properti
+            
             existingTask.Title = task.Title;
             existingTask.Description = task.Description;
             existingTask.DueDate = task.DueDate;
             existingTask.IsCompleted = task.IsCompleted;
 
-            // Menggunakan Update() secara sinkron
+           
             _context.Tasks.Update(existingTask);
 
-            // Menyimpan perubahan secara sinkron
+            
             _context.SaveChanges();
         }
 
         public IEnumerable<TaskItem> GetTasksByUserId(int userId)
         {
-            // Mengambil semua task yang memiliki AssignedUserId yang sama dengan userId yang diberikan
+            
             return _context.Tasks.Where(task => task.AssignedUserId == userId).ToList();
         }
 

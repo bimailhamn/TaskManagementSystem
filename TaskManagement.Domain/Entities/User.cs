@@ -2,15 +2,17 @@ namespace TaskManagement.Domain.Entities
 {
     public class User
     {
-        public int Id { get; set; } // Unique identifier for the user.
-        public required string Name { get; set; } // Name of the user.
-        public required string Email { get; set; } // Email address of the user.
+        public int Id { get; set; } 
+        public required string Name { get; set; } 
+        public required string Email { get; set; } 
         public string PasswordHash { get; set; }
 
-        // Collection of tasks assigned to the user
+        public bool IsActive { get; set; }
+
+        
         public ICollection<TaskItem> AssignedTasks { get; set; } = new List<TaskItem>();
 
-        // Method to validate user properties
+        
         public void Validate()
         {
             if (string.IsNullOrWhiteSpace(Name))
@@ -18,6 +20,24 @@ namespace TaskManagement.Domain.Entities
 
             if (string.IsNullOrWhiteSpace(Email) || !Email.Contains("@"))
                 throw new ArgumentException("Invalid email address.");
+        }
+
+        public void UpdateEmail(string newEmail)
+        {
+            if (string.IsNullOrWhiteSpace(newEmail) || !newEmail.Contains("@"))
+                throw new ArgumentException("Invalid email address.");
+            
+            Email = newEmail;
+        }
+
+        public void Activate()
+        {
+            IsActive = true;
+        }
+
+        public void Deactivate()
+        {
+            IsActive = false;
         }
     }
 }

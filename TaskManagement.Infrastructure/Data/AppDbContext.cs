@@ -35,7 +35,7 @@ namespace TaskManagement.Infrastructure.Data
         {
             base.OnModelCreating(modelBuilder);
 
-            // Configure TaskItem entity
+            
             modelBuilder.Entity<TaskItem>(entity =>
             {
                 entity.HasKey(t => t.Id);
@@ -50,7 +50,7 @@ namespace TaskManagement.Infrastructure.Data
                     .OnDelete(DeleteBehavior.SetNull);
             });
 
-            // Configure User entity
+            
             modelBuilder.Entity<User>(entity =>
             {
                 entity.HasKey(u => u.Id);

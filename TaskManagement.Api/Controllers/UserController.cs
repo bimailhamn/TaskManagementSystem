@@ -65,12 +65,12 @@ namespace TaskManagement.Api.Controllers
         {
             try
             {
-                var deletedUser = _userService.DeleteUser(id); // Now returns UserDto or throws exception
+                var deletedUser = _userService.DeleteUser(id);
 
                 if (deletedUser == null)
                     return NotFound(new { message = "User not found" });
 
-                return Ok(deletedUser); // Return UserDto of deleted user
+                return Ok(deletedUser);
             }
             catch (KeyNotFoundException)
             {

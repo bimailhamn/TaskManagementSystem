@@ -63,13 +63,13 @@ namespace TaskManagement.Api.Controllers
         [HttpDelete("{id}")]
         public IActionResult DeleteTask(int id)
         {
-            var deletedTask = _taskService.DeleteTask(id); // Now receives and returns TaskDto
+            var deletedTask = _taskService.DeleteTask(id);
             if (deletedTask == null)
             {
                 return NotFound(new { message = "Task not found" });
             }
 
-            return Ok(deletedTask); // Return the TaskDto of the deleted task
+            return Ok(deletedTask);
         }
     }
 }

@@ -1,39 +1,33 @@
 {
   "format": 1,
   "restore": {
-    "D:\\2030\\TaskManagementSystem\\TaskManagement.Tests\\TaskManagement.Tests.csproj": {}
+    "D:\\2026\\TaskManagementSystem\\TaskManagement.Tests\\TaskManagement.Tests.csproj": {}
   },
   "projects": {
-    "D:\\2030\\TaskManagementSystem\\TaskManagement.Application\\TaskManagement.Application.csproj": {
+    "D:\\2026\\TaskManagementSystem\\TaskManagement.Application\\TaskManagement.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\2030\\TaskManagementSystem\\TaskManagement.Application\\TaskManagement.Application.csproj",
+        "projectUniqueName": "D:\\2026\\TaskManagementSystem\\TaskManagement.Application\\TaskManagement.Application.csproj",
         "projectName": "TaskManagement.Application",
-        "projectPath": "D:\\2030\\TaskManagementSystem\\TaskManagement.Application\\TaskManagement.Application.csproj",
-        "packagesPath": "C:\\Users\\Katana\\.nuget\\packages\\",
-        "outputPath": "D:\\2030\\TaskManagementSystem\\TaskManagement.Application\\obj\\",
+        "projectPath": "D:\\2026\\TaskManagementSystem\\TaskManagement.Application\\TaskManagement.Application.csproj",
+        "packagesPath": "C:\\Users\\amaibinlucky\\.nuget\\packages\\",
+        "outputPath": "D:\\2026\\TaskManagementSystem\\TaskManagement.Application\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Katana\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\amaibinlucky\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "D:\\2030\\TaskManagementSystem\\TaskManagement.Domain\\TaskManagement.Domain.csproj": {
-                "projectPath": "D:\\2030\\TaskManagementSystem\\TaskManagement.Domain\\TaskManagement.Domain.csproj"
+              "D:\\2026\\TaskManagementSystem\\TaskManagement.Domain\\TaskManagement.Domain.csproj": {
+                "projectPath": "D:\\2026\\TaskManagementSystem\\TaskManagement.Domain\\TaskManagement.Domain.csproj"
               }
             }
           }
@@ -48,7 +42,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net9.0": {
@@ -69,32 +63,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\2030\\TaskManagementSystem\\TaskManagement.Domain\\TaskManagement.Domain.csproj": {
+    "D:\\2026\\TaskManagementSystem\\TaskManagement.Domain\\TaskManagement.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\2030\\TaskManagementSystem\\TaskManagement.Domain\\TaskManagement.Domain.csproj",
+        "projectUniqueName": "D:\\2026\\TaskManagementSystem\\TaskManagement.Domain\\TaskManagement.Domain.csproj",
         "projectName": "TaskManagement.Domain",
-        "projectPath": "D:\\2030\\TaskManagementSystem\\TaskManagement.Domain\\TaskManagement.Domain.csproj",
-        "packagesPath": "C:\\Users\\Katana\\.nuget\\packages\\",
-        "outputPath": "D:\\2030\\TaskManagementSystem\\TaskManagement.Domain\\obj\\",
+        "projectPath": "D:\\2026\\TaskManagementSystem\\TaskManagement.Domain\\TaskManagement.Domain.csproj",
+        "packagesPath": "C:\\Users\\amaibinlucky\\.nuget\\packages\\",
+        "outputPath": "D:\\2026\\TaskManagementSystem\\TaskManagement.Domain\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Katana\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\amaibinlucky\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -113,7 +101,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net9.0": {
@@ -134,40 +122,34 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\2030\\TaskManagementSystem\\TaskManagement.Infrastructure\\TaskManagement.Infrastructure.csproj": {
+    "D:\\2026\\TaskManagementSystem\\TaskManagement.Infrastructure\\TaskManagement.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\2030\\TaskManagementSystem\\TaskManagement.Infrastructure\\TaskManagement.Infrastructure.csproj",
+        "projectUniqueName": "D:\\2026\\TaskManagementSystem\\TaskManagement.Infrastructure\\TaskManagement.Infrastructure.csproj",
         "projectName": "TaskManagement.Infrastructure",
-        "projectPath": "D:\\2030\\TaskManagementSystem\\TaskManagement.Infrastructure\\TaskManagement.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\Katana\\.nuget\\packages\\",
-        "outputPath": "D:\\2030\\TaskManagementSystem\\TaskManagement.Infrastructure\\obj\\",
+        "projectPath": "D:\\2026\\TaskManagementSystem\\TaskManagement.Infrastructure\\TaskManagement.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\amaibinlucky\\.nuget\\packages\\",
+        "outputPath": "D:\\2026\\TaskManagementSystem\\TaskManagement.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Katana\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\amaibinlucky\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "D:\\2030\\TaskManagementSystem\\TaskManagement.Domain\\TaskManagement.Domain.csproj": {
-                "projectPath": "D:\\2030\\TaskManagementSystem\\TaskManagement.Domain\\TaskManagement.Domain.csproj"
+              "D:\\2026\\TaskManagementSystem\\TaskManagement.Domain\\TaskManagement.Domain.csproj": {
+                "projectPath": "D:\\2026\\TaskManagementSystem\\TaskManagement.Domain\\TaskManagement.Domain.csproj"
               }
             }
           }
@@ -182,7 +164,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net9.0": {
@@ -223,46 +205,40 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\2030\\TaskManagementSystem\\TaskManagement.Tests\\TaskManagement.Tests.csproj": {
+    "D:\\2026\\TaskManagementSystem\\TaskManagement.Tests\\TaskManagement.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\2030\\TaskManagementSystem\\TaskManagement.Tests\\TaskManagement.Tests.csproj",
+        "projectUniqueName": "D:\\2026\\TaskManagementSystem\\TaskManagement.Tests\\TaskManagement.Tests.csproj",
         "projectName": "TaskManagement.Tests",
-        "projectPath": "D:\\2030\\TaskManagementSystem\\TaskManagement.Tests\\TaskManagement.Tests.csproj",
-        "packagesPath": "C:\\Users\\Katana\\.nuget\\packages\\",
-        "outputPath": "D:\\2030\\TaskManagementSystem\\TaskManagement.Tests\\obj\\",
+        "projectPath": "D:\\2026\\TaskManagementSystem\\TaskManagement.Tests\\TaskManagement.Tests.csproj",
+        "packagesPath": "C:\\Users\\amaibinlucky\\.nuget\\packages\\",
+        "outputPath": "D:\\2026\\TaskManagementSystem\\TaskManagement.Tests\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Katana\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\amaibinlucky\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "D:\\2030\\TaskManagementSystem\\TaskManagement.Application\\TaskManagement.Application.csproj": {
-                "projectPath": "D:\\2030\\TaskManagementSystem\\TaskManagement.Application\\TaskManagement.Application.csproj"
+              "D:\\2026\\TaskManagementSystem\\TaskManagement.Application\\TaskManagement.Application.csproj": {
+                "projectPath": "D:\\2026\\TaskManagementSystem\\TaskManagement.Application\\TaskManagement.Application.csproj"
               },
-              "D:\\2030\\TaskManagementSystem\\TaskManagement.Domain\\TaskManagement.Domain.csproj": {
-                "projectPath": "D:\\2030\\TaskManagementSystem\\TaskManagement.Domain\\TaskManagement.Domain.csproj"
+              "D:\\2026\\TaskManagementSystem\\TaskManagement.Domain\\TaskManagement.Domain.csproj": {
+                "projectPath": "D:\\2026\\TaskManagementSystem\\TaskManagement.Domain\\TaskManagement.Domain.csproj"
               },
-              "D:\\2030\\TaskManagementSystem\\TaskManagement.Infrastructure\\TaskManagement.Infrastructure.csproj": {
-                "projectPath": "D:\\2030\\TaskManagementSystem\\TaskManagement.Infrastructure\\TaskManagement.Infrastructure.csproj"
+              "D:\\2026\\TaskManagementSystem\\TaskManagement.Infrastructure\\TaskManagement.Infrastructure.csproj": {
+                "projectPath": "D:\\2026\\TaskManagementSystem\\TaskManagement.Infrastructure\\TaskManagement.Infrastructure.csproj"
               }
             }
           }
@@ -277,12 +253,16 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[9.0.3, )"
+            },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[17.12.0, )"
@@ -320,7 +300,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

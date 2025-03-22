@@ -215,6 +215,24 @@
       "Microsoft.EntityFrameworkCore.Analyzers/9.0.3": {
         "type": "package"
       },
+      "Microsoft.EntityFrameworkCore.InMemory/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "9.0.3",
+          "Microsoft.Extensions.Caching.Memory": "9.0.3",
+          "Microsoft.Extensions.Logging": "9.0.3"
+        },
+        "compile": {
+          "lib/net8.0/Microsoft.EntityFrameworkCore.InMemory.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.EntityFrameworkCore.InMemory.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.EntityFrameworkCore.Relational/9.0.3": {
         "type": "package",
         "dependencies": {
@@ -2134,6 +2152,21 @@
         "docs/PACKAGE.md",
         "microsoft.entityframeworkcore.analyzers.9.0.3.nupkg.sha512",
         "microsoft.entityframeworkcore.analyzers.nuspec"
+      ]
+    },
+    "Microsoft.EntityFrameworkCore.InMemory/9.0.3": {
+      "sha512": "cSi0TzffzSN4p83qtgxhWKl+jcD17xfuTzYz6IJWVHkjQsD5gOdqpY5VBBFZhTgqdwon8LnArs9cFjd9EYCC1g==",
+      "type": "package",
+      "path": "microsoft.entityframeworkcore.inmemory/9.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "PACKAGE.md",
+        "lib/net8.0/Microsoft.EntityFrameworkCore.InMemory.dll",
+        "lib/net8.0/Microsoft.EntityFrameworkCore.InMemory.xml",
+        "microsoft.entityframeworkcore.inmemory.9.0.3.nupkg.sha512",
+        "microsoft.entityframeworkcore.inmemory.nuspec"
       ]
     },
     "Microsoft.EntityFrameworkCore.Relational/9.0.3": {
@@ -4227,6 +4260,7 @@
   },
   "projectFileDependencyGroups": {
     "net9.0": [
+      "Microsoft.EntityFrameworkCore.InMemory >= 9.0.3",
       "Microsoft.NET.Test.Sdk >= 17.12.0",
       "Moq >= 4.20.72",
       "TaskManagement.Application >= 1.0.0",
@@ -4238,45 +4272,38 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Katana\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\amaibinlucky\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\2030\\TaskManagementSystem\\TaskManagement.Tests\\TaskManagement.Tests.csproj",
+      "projectUniqueName": "D:\\2026\\TaskManagementSystem\\TaskManagement.Tests\\TaskManagement.Tests.csproj",
       "projectName": "TaskManagement.Tests",
-      "projectPath": "D:\\2030\\TaskManagementSystem\\TaskManagement.Tests\\TaskManagement.Tests.csproj",
-      "packagesPath": "C:\\Users\\Katana\\.nuget\\packages\\",
-      "outputPath": "D:\\2030\\TaskManagementSystem\\TaskManagement.Tests\\obj\\",
+      "projectPath": "D:\\2026\\TaskManagementSystem\\TaskManagement.Tests\\TaskManagement.Tests.csproj",
+      "packagesPath": "C:\\Users\\amaibinlucky\\.nuget\\packages\\",
+      "outputPath": "D:\\2026\\TaskManagementSystem\\TaskManagement.Tests\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Katana\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\amaibinlucky\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "D:\\2030\\TaskManagementSystem\\TaskManagement.Application\\TaskManagement.Application.csproj": {
-              "projectPath": "D:\\2030\\TaskManagementSystem\\TaskManagement.Application\\TaskManagement.Application.csproj"
+            "D:\\2026\\TaskManagementSystem\\TaskManagement.Application\\TaskManagement.Application.csproj": {
+              "projectPath": "D:\\2026\\TaskManagementSystem\\TaskManagement.Application\\TaskManagement.Application.csproj"
             },
-            "D:\\2030\\TaskManagementSystem\\TaskManagement.Domain\\TaskManagement.Domain.csproj": {
-              "projectPath": "D:\\2030\\TaskManagementSystem\\TaskManagement.Domain\\TaskManagement.Domain.csproj"
+            "D:\\2026\\TaskManagementSystem\\TaskManagement.Domain\\TaskManagement.Domain.csproj": {
+              "projectPath": "D:\\2026\\TaskManagementSystem\\TaskManagement.Domain\\TaskManagement.Domain.csproj"
             },
-            "D:\\2030\\TaskManagementSystem\\TaskManagement.Infrastructure\\TaskManagement.Infrastructure.csproj": {
-              "projectPath": "D:\\2030\\TaskManagementSystem\\TaskManagement.Infrastructure\\TaskManagement.Infrastructure.csproj"
+            "D:\\2026\\TaskManagementSystem\\TaskManagement.Infrastructure\\TaskManagement.Infrastructure.csproj": {
+              "projectPath": "D:\\2026\\TaskManagementSystem\\TaskManagement.Infrastructure\\TaskManagement.Infrastructure.csproj"
             }
           }
         }
@@ -4291,12 +4318,16 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.100"
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net9.0": {
         "targetAlias": "net9.0",
         "dependencies": {
+          "Microsoft.EntityFrameworkCore.InMemory": {
+            "target": "Package",
+            "version": "[9.0.3, )"
+          },
           "Microsoft.NET.Test.Sdk": {
             "target": "Package",
             "version": "[17.12.0, )"
@@ -4334,7 +4365,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.202/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

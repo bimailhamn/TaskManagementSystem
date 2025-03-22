@@ -37,7 +37,7 @@ namespace TaskManagement.Application.Services
 
             _taskRepository.Add(task);
 
-            // Return the created task as TaskDto
+          
             var createdTaskDto = new TaskDto
             {
                 Id = task.Id,
@@ -49,7 +49,7 @@ namespace TaskManagement.Application.Services
                 AssignedUserId = task.AssignedUserId
             };
 
-            return createdTaskDto; // Return the created TaskDto
+            return createdTaskDto; 
         }
 
         public IEnumerable<TaskDto> GetAllTasks()
@@ -99,7 +99,7 @@ namespace TaskManagement.Application.Services
                 throw new ArgumentException("Due date cannot be in the past.");
             }
 
-            // Update task properties
+            
             task.Title = updatedTaskDto.Title;
             task.Description = updatedTaskDto.Description;
             task.DueDate = updatedTaskDto.DueDate;
@@ -109,7 +109,7 @@ namespace TaskManagement.Application.Services
 
             _taskRepository.Update(task);
 
-            // Map the updated task to a TaskDto and return it
+            
             var updatedTaskDtoResponse = new TaskDto
             {
                 Id = task.Id,
@@ -121,7 +121,7 @@ namespace TaskManagement.Application.Services
                 AssignedUserId = task.AssignedUserId
             };
 
-            return updatedTaskDtoResponse; // Return the updated TaskDto
+            return updatedTaskDtoResponse; 
         }
 
         public TaskDto DeleteTask(int taskId)
@@ -132,7 +132,7 @@ namespace TaskManagement.Application.Services
                 throw new KeyNotFoundException("Task not found.");
             }
 
-            // Map the task to a TaskDto before deleting
+            
             var taskDto = new TaskDto
             {
                 Id = task.Id,
@@ -144,10 +144,10 @@ namespace TaskManagement.Application.Services
                 AssignedUserId = task.AssignedUserId
             };
 
-            // Delete the task
+            
             _taskRepository.Delete(task.Id);
 
-            return taskDto; // Return the TaskDto of the deleted task
+            return taskDto; 
         }
 
         public IEnumerable<TaskDto> GetTasksByUserId(int userId)

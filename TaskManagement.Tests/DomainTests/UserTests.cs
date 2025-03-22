@@ -1,99 +1,104 @@
-//using System;
-//using TaskManagement.Domain.Entities;
-//using Xunit;
+using System;
+using TaskManagement.Domain.Entities;
+using Xunit;
 
-//namespace TaskManagement.Tests.DomainTests
-//{
-//    public class UserTests
-//    {
-//        [Fact]
-//        public void Can_Create_User_With_Valid_Data()
-//        {
-//            // Arrange
-//            var username = "testuser";
-//            var email = "testuser@example.com";
+namespace TaskManagement.Tests.DomainTests
+{
+   public class UserTests
+   {
+       [Fact]
+        public void Can_Create_User_With_Valid_Data()
+        {
+            var username = "testuser";
+            var email = "testuser@example.com";
+            var user = new User
+            {
+                Name = username,
+                Email = email
+            };
 
-//            // Act
-//            var user = new User(username, email);
+            // Assert
+            Assert.NotNull(user);
+            Assert.Equal(username, user.Name);
+            Assert.Equal(email, user.Email);
+        }
 
-//            // Assert
-//            Assert.NotNull(user);
-//            Assert.Equal(username, user.Username);
-//            Assert.Equal(email, user.Email);
-//        }
+       [Fact]
+        public void Cannot_Create_User_With_Empty_Username()
+        {
+            var username = string.Empty;
+            var email = "testuser@example.com";
+            var exception = Assert.Throws<ArgumentException>(() =>
+            {
+                var user = new User
+                {
+                    Name = username,
+                    Email = email
+                };
+                user.Validate();
+            });
 
-//        [Fact]
-//        public void Cannot_Create_User_With_Empty_Username()
-//        {
-//            // Arrange
-//            var username = string.Empty;
-//            var email = "testuser@example.com";
+            Assert.Equal("User name cannot be empty.", exception.Message);
+        }
+       
 
-//            // Act & Assert
-//            Assert.Throws<ArgumentException>(() => new User(username, email));
-//        }
+       [Fact]
+        public void Cannot_Create_User_With_Invalid_Email()
+        {
+            var username = "testuser";
+            var email = "invalid-email";
+            var exception = Assert.Throws<ArgumentException>(() =>
+            {
+                var user = new User
+                {
+                    Name = username,
+                    Email = email
+                };
+                user.Validate();
+            });
 
-//        [Fact]
-//        public void Cannot_Create_User_With_Invalid_Email()
-//        {
-//            // Arrange
-//            var username = "testuser";
-//            var email = "invalid-email";
+            Assert.Equal("Invalid email address.", exception.Message);
+        }
 
-//            // Act & Assert
-//            Assert.Throws<ArgumentException>(() => new User(username, email));
-//        }
+       [Fact]
+        public void Can_Update_User_Email()
+        {
+            var user = new User
+            {
+                Name = "testuser",
+                Email = "testuser@example.com"
+            };
+            var newEmail = "updateduser@example.com";
+            user.UpdateEmail(newEmail);
+            Assert.Equal(newEmail, user.Email);
+        }
 
-//        [Fact]
-//        public void Can_Update_User_Email()
-//        {
-//            // Arrange
-//            var user = new User("testuser", "testuser@example.com");
-//            var newEmail = "updateduser@example.com";
+       [Fact]
+        public void Can_Activate_User()
+        {
+            var user = new User
+            {
+                Name = "testuser",
+                Email = "testuser@example.com"
+            };
+            user.Activate();
+            Assert.True(user.IsActive);
+        }
 
-//            // Act
-//            user.UpdateEmail(newEmail);
+       [Fact]
+        public void Can_Deactivate_User()
+        {
+            var user = new User
+            {
+                Name = "testuser",
+                Email = "testuser@example.com"
+            };
+            user.Activate();
 
-//            // Assert
-//            Assert.Equal(newEmail, user.Email);
-//        }
+            // Act
+            user.Deactivate();
 
-//        [Fact]
-//        public void Cannot_Update_User_With_Invalid_Email()
-//        {
-//            // Arrange
-//            var user = new User("testuser", "testuser@example.com");
-//            var invalidEmail = "invalid-email";
-
-//            // Act & Assert
-//            Assert.Throws<ArgumentException>(() => user.UpdateEmail(invalidEmail));
-//        }
-
-//        [Fact]
-//        public void Can_Activate_User()
-//        {
-//            // Arrange
-//            var user = new User("testuser", "testuser@example.com");
-
-//            // Act
-//            user.Activate();
-
-//            // Assert
-//            Assert.True(user.IsActive);
-//        }
-
-//        [Fact]
-//        public void Can_Deactivate_User()
-//        {
-//            // Arrange
-//            var user = new User("testuser", "testuser@example.com");
-//            user.Activate(); // Activate first
-
-//            // Act
-//            user.Deactivate();
-
-//            // Assert
-//            Assert.False(user.IsActive);
-//        }
-//    }
-//}
+            Assert.False(user.IsActive);
+        }
+   }
+}

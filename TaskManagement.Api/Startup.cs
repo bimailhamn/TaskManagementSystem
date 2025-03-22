@@ -9,7 +9,7 @@ using TaskManagement.Application.Services;
 using TaskManagement.Domain.Interfaces;
 using TaskManagement.Infrastructure.Data;
 using TaskManagement.Infrastructure.Repositories;
-using Microsoft.OpenApi.Models;  // Required for Swagger
+using Microsoft.OpenApi.Models;
 
 namespace TaskManagement.Api
 {
@@ -35,7 +35,7 @@ namespace TaskManagement.Api
             services.AddScoped<ITaskRepository, TaskRepository>();
             services.AddScoped<IUserRepository, UserRepository>();
 
-            // Add Swagger to the services
+    
             services.AddEndpointsApiExplorer();
             services.AddSwaggerGen(c =>
             {
@@ -48,7 +48,7 @@ namespace TaskManagement.Api
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                app.UseSwagger();  // Enable Swagger
+                app.UseSwagger();
                 app.UseSwaggerUI(c =>
                     c.SwaggerEndpoint("/swagger/v1/swagger.json", "TaskManagement API v1"));
             }

@@ -57,7 +57,7 @@ namespace TaskManagement.Infrastructure.Repositories
 
         public IEnumerable<User> GetAll()
         {
-            // Mengambil semua pengguna secara sinkron
+            
             return _context.Users.ToList();
         }
 
@@ -73,7 +73,7 @@ namespace TaskManagement.Infrastructure.Repositories
             if (existingUser == null)
                 throw new KeyNotFoundException($"User with ID {user.Id} not found.");
 
-            // Update properties
+           
             existingUser.Name = user.Name;
             existingUser.Email = user.Email;
 

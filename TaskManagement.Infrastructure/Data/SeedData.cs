@@ -15,7 +15,7 @@ namespace TaskManagement.Infrastructure.Data
         /// <param name="context">The application's database context.</param>
         public static void Initialize(AppDbContext context)
         {
-            // Check if the Users table is empty
+            
             if (!context.Users.Any())
             {
                 context.Users.AddRange(
@@ -24,19 +24,19 @@ namespace TaskManagement.Infrastructure.Data
                         Id = 1,
                         Name = "John Doe",
                         Email = "john.doe@example.com",
-                        PasswordHash = "hashed_password_1" // Ensure PasswordHash exists in User entity
+                        PasswordHash = "hashed_password_1" 
                     },
                     new User
                     {
                         Id = 2,
                         Name = "Jane Smith",
                         Email = "jane.smith@example.com",
-                        PasswordHash = "hashed_password_2" // Ensure PasswordHash exists in User entity
+                        PasswordHash = "hashed_password_2" 
                     }
                 );
             }
 
-            // Check if the Tasks table is empty
+           
             if (!context.Tasks.Any())
             {
                 context.Tasks.AddRange(
@@ -47,7 +47,7 @@ namespace TaskManagement.Infrastructure.Data
                         Description = "Finalize the project documentation for TaskManagementSystem.",
                         AssignedUserId = context.Users.First().Id,
                         DueDate = DateTime.Now.AddDays(7),
-                        IsCompleted = false // Ensure IsCompleted exists in TaskItem entity
+                        IsCompleted = false 
                     },
                     new TaskItem
                     {
@@ -56,12 +56,12 @@ namespace TaskManagement.Infrastructure.Data
                         Description = "Resolve the issue where users cannot log in with their credentials.",
                         AssignedUserId = context.Users.Last().Id,
                         DueDate = DateTime.Now.AddDays(3),
-                        IsCompleted = false // Ensure IsCompleted exists in TaskItem entity
+                        IsCompleted = false 
                     }
                 );
             }
 
-            // Save changes to the database
+            
             context.SaveChanges();
         }
     }
